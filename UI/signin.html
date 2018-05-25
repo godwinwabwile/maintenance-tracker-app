@@ -9,8 +9,14 @@
 	<!--========================start of ttopbar=========================-->
 
 	<div id="topbar">
-		<p><i>info</i>@maintenancetracker.com</p>
+		<ul>
+			<li>
+			<a href="signin.html" >sign in</a>	
+			</li>
+			<li><a href="#">sign up</a> </li>
+		</ul>
 	</div>
+	<div id="clearfix"></div>
 <!--========================End of topbar=========================-->
 <!--========================start of header=========================-->
 
@@ -21,35 +27,36 @@
 <!--========================start of nav bar=========================-->
 
 	<nav>
-		<ul>
-			<li>
-			<a href="signin.html" >sign in</a>	
-			</li>
-			<li><a href="#">sign up</a> </li>
-		</ul>
+		
 		<div id="clearfix"></div>
 	</nav>
 	<!--========================End ofnav bar=========================-->
+<!--========================login form=========================-->
+<div id="login" class="modal">
+  <form class="modal-content animate" action="signin.html">
+    <div class="imgcontainer">
+      <img src="images/user.png" alt="Avatar" class="avatar">
+    </div>
 
-	<!--===============start of banner=============-->
-	<div id="banner"><h2>WELCOME TO MAINTENANCE TRACKER <i>keeping your system upto date</i></h2>
-		<div id="clearfix"></div>
-	</div>
-	<!--========================End of banner=========================-->
-<!--========================about column=========================-->
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
 
-	<section class="left-col">	
-		<p>We keep your systems up to date and in a good form every time. With our live support admin, your request will always have a response if ten minutes.Give us your requests and enjoy our services.</p>
-		<p><b> Stay up to date always!!</b></p>
-	
-	</section>
-	<aside class="sidebar">
-		<div id="tracker">
-			<img src="images/tracker.jpeg">
-		</div>
-	</aside>
-	<div id="clearfix"></div>
-	<!--========================End of about=========================-->
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+       <div class="clearfix"></div>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="clearfix">
+        <a href="index.html"><button type="button" class="cancelbtn">Cancel </button></a>
+        <button type="submit" class="signupbtn">Login</button>
+      </div>
+  </form>
+</div>
+<div class="clearfix"></div>
+<!--========================End of loginform=========================-->
 <!--========================footer=========================-->
 
 	<footer>

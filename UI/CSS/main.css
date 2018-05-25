@@ -71,6 +71,11 @@
 		text-decoration: none;
 		color:#f1f0d1; 
 	}
+	#topbar ul li a:hover, #topbar ul li a:focus{
+		background: darkblue;
+		color: #f1f0d1;
+
+	}
 	#topbar ul li a b{
 		color: red;
 	}
@@ -195,6 +200,11 @@ button:hover {
     padding: 14px 20px;
     background-color: #f44336;
 }
+.cancelbtn a{
+	text-decoration: none;
+	font-size: 13px;
+	color: #f1f0d1;
+}
 
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
@@ -215,12 +225,10 @@ button:hover {
 
 /* The Modal (background) */
 .modal {
-    position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: skyblue;
     padding-top: 50px;
@@ -257,6 +265,12 @@ hr {
 .close:focus {
     color: #f44336;
     cursor: pointer;
+}
+.imgcontainer{
+	text-align: center;
+}
+.imgcontainer img{
+	border-radius: 50%;
 }
 
 /* Clear floats */
